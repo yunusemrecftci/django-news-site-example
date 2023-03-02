@@ -1,0 +1,12 @@
+{% extends '../base.html' %}
+
+{% block index %}
+<div class="card border-primary mb-3" style="max-width: 18rem; padding-top:10px;;">
+    <a href="{% url 'postdetail' postdata.slug %}"></i><div class="card-header">{{postdata.title}}</div></a>
+    <div class="card-body text-primary">
+       <p class="card-text">{{postdata.text}}</p>
+       <div class="card-header">{{postdata.date}}</div>
+
+    </div>
+  </div>
+{% endblock%}
